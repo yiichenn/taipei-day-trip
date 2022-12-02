@@ -105,6 +105,23 @@ nav{
     width: 60px;
     border-width: 0px;
 }
+.searchcategory{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    width:402px;
+}
+.categorybutton{
+    border:#aca8a8 1px solid;
+    background-color: #ffffff;
+    
+    font-weight:800;
+    font-size: 16px;
+    color: #757575;
+    display:flex;
+    justify-content:center;
+    padding:5px;
+}
+
 main{
     display:flex;
     justify-content:center;
@@ -129,6 +146,9 @@ main{
 }
 .nodata{
     width:100%;
+    color: #a8a3a6;
+    font-weight:700;
+    font-size:25px;
 }
 .namediv{
     background: rgba(0, 0, 0, 0.6);
@@ -219,6 +239,9 @@ footer{
         margin-left: 10px;
         margin-top:85px;
     }
+    .searchcategory{
+        width:300px;
+    }
     .left{
         margin-left:40px;
     }
@@ -231,6 +254,7 @@ footer{
     .col{
         width:90%;
         height:auto;
+        margin:0px;
     }
 }
 @media(max-width:600px){
