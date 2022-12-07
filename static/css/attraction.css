@@ -355,13 +355,13 @@ footer{
     .col-left{
         justify-content: center;
     }
+    main{
+        margin-top:0px;
+    }
   
 }
 @media(max-width:400px){
     .col-left{
         margin:10px;
-    }
-    main{
-        margin-top:0px;
     }
 }
