@@ -3,17 +3,21 @@ let searchInput = document.querySelector(".searchinput");
 let keyword = searchInput.value
 let page = 0;
 let url = `api/attractions?page=${page}&keyword=${keyword}`
-//create attraction
+// create attraction
 function createAttraction(data){
     for(i=0;i<data.length;i++){
+        let id = data[i].id
         let name = data[i].name;
         let mrt = data[i].mrt;
         let category = data[i].category;
         let image = data[i].images[0];
         
-        let col = document.createElement("div");
+        let col = document.createElement("a");
         col.classList="col";
-
+        col.id=id;
+        col.setAttribute("href", `attraction/${id}`)
+        col.setAttribute("style", "text-decoration:none")
+        
         let attractionImg = document.createElement("img");
         attractionImg.classList= "attractionImg";
         attractionImg.src = image;
@@ -123,7 +127,7 @@ function category(){
         function categorybutton(category){       
             let col = document.createElement("div");
             col.classList="categorybutton";
-            // col.setAttribute("button", "")
+            col.setAttribute("style", "cursor: pointer;")
             col.textContent = category;
             searchCategory.appendChild(col)
         }
