@@ -6,8 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>台北一日遊</title>
     <link rel="stylesheet" type="text/css" href="/static/css/index.css"/>
+    <link rel="stylesheet" type="text/css" href="/static/css/form.css"/>
 </head>
-<body>
+<body class="body" style="overflow: auto;">
+    <div class="body-backgroung" style="display:none;height: 100%;"></div>
     <nav>
         <div class="top">
             <div class="left">
@@ -15,11 +17,15 @@
             </div>
             <div class="right">
                 <div class="navreserve">預定行程</div>
-                <div class="navlogin">登入/註冊</div>
+                <div class="navlogin">
+                    <span class="login-btn" style="cursor: pointer;" onclick="showlogin();">登入</span>
+                    /
+                    <span class="register-btn" onclick=" showregister()" style="cursor: pointer;">註冊</span>
+                    <span class="logout-btn" style="cursor:pointer;display:none;" onclick="">登出</span>
+                </div>
             </div>
         </div>
     </nav>
-
     <div class="banner">
         <img class="welcome" src="/static/img/welcome.png" alt="">
         <div class="searchbox">
@@ -31,7 +37,34 @@
                     <img src="/static/img/icon_search.png" alt=""/>
                 </button>
             </div>
-            <div class="searchcategory"></div>
+            <div class="searchcategory" style="display: none;"></div>
+            <div class="sign-in" style="display: none;">
+                <div class="sign-in-bar">
+                    <div class="sign-in-title">登入會員帳號</div>
+                    <img src="/static/img/icon_close.png" class="close-button" onclick="closelogin()">
+                </div>
+                <div class="sign-in-form" id="sign-in-form">
+                    <input type="text" placeholder="請輸入電子信箱" class="user-input-mail">
+                    <input type="password" placeholder="輸入密碼" class="user-input-password">
+                    <button class="sign-in-button" onclick="signinbtn()">登入帳戶</button>
+                    <div class="sign-in-alert"></div>
+                    <div class="sign-in-content" onclick="clicktoregister();">還沒有帳戶？點此註冊</div>
+                </div>
+            </div>
+            <div class="register" style="display: none;">
+                <div class="register-bar">
+                    <div class="register-title">註冊會員帳號</div>
+                    <img src="/static/img/icon_close.png" class="close-button"onclick=" closeresister();">
+                </div>
+                <div class="register-form" id="register-form">
+                    <input type="text" placeholder="輸入姓名" class="register-input-name">
+                    <input type="text" placeholder="輸入電子信箱" class="register-input-mail">
+                    <input type="password" placeholder="輸入密碼" class="register-input-password">
+                    <button class="register-button" onclick="registerbtn();" style="cursor: pointer;">註冊新帳戶</button>
+                    <div class="register-alert"></div>
+                    <div class="register-content" onclick="clicktosignin();" style="cursor: pointer;">已經有帳戶了？點此登入</div>
+                </div>
+            </div>
         </div>
     </div>
 
@@ -43,5 +76,6 @@
         <div class="copyright">COPYRIGHT © 2021 台北一日遊</div>
     </footer>
     <script src="/static/js/index.js" defer></script>
+    <script src="/static/js/singin.js"defer></script>
 </body>
 </html>

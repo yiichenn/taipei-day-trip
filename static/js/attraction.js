@@ -1,6 +1,5 @@
 let attraction = document.querySelector(".attraction")
 let colright = document.querySelector(".col-right");
-
 let url = location.href
 let id = url.split("attraction/")[1]
 url = "/api/attractions/" + id
@@ -28,8 +27,6 @@ function createAttraction(data){
     showSlides(slideIndex);
 
 };
-
-
 
 //fetch url return json data
 async function getattractionData(url){
@@ -131,7 +128,7 @@ window.onclick = function(event){
 }
 
 
-
+//照片輪播
 function plusSlides(n) {
 showSlides(slideIndex += n);
 }

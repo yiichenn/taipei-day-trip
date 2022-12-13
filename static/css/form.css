@@ -1,0 +1,220 @@
+
+*{
+    font-family: 'Noto Sans TC';
+    font-style: normal;
+
+}
+.sign-in{
+    margin: auto;
+    margin-top:-200px;
+    width: 340px;
+    top: 80px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 60px #AAAAAA;
+    border-radius: 6px;
+    position:sticky;
+    z-index: 20;
+    left: 50px;
+}
+.sign-in-bar{
+    display: flex;
+    justify-content: center;
+    width: 340px;
+    height: 10px;
+    background: linear-gradient(270deg, #337788 0%, #66AABB 100%);
+}
+.sign-in-title{
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 24px;
+    text-align: center;
+    color: #666666;
+    padding-top: 25px;
+}
+.close-button{
+    position:relative;
+    width: 16px;
+    height: 16px;
+    top:25px;
+    left:80px;
+    cursor: pointer;
+}
+.user-input-mail{
+    width: 280px;
+    height: 17px;
+    background: #FFFFFF;
+    border: 1px solid #CCCCCC;
+    border-radius: 5px;
+    margin:60px 15px 10px 15px;
+    
+    font-weight:700;
+    font-size: 16px;
+    line-height: 13px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #757575;
+    padding:15px;
+}
+.user-input-password{
+    width: 280px;
+    height: 17px;
+    background: #FFFFFF;
+    border: 1px solid #CCCCCC;
+    border-radius: 5px;
+    margin:15px 15px 10px 15px;
+    
+    font-weight:700;
+    font-size: 16px;
+    line-height: 13px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #757575;
+    padding:15px;
+}
+.sign-in-button{
+    width: 310px;
+    height: 47px;
+    font-weight: 400;
+    font-size: 19px;
+    line-height: 16px;
+    text-align: center;
+    color: #FFFFFF;
+    background: #448899;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left:15px;
+    margin-bottom:10px;
+}
+.sign-in-alert{
+    position: relative;
+    text-align: center;
+}
+.sign-in-content{
+    font-weight:600;
+    font-size: 16px;
+    line-height: 13px;
+    text-align: center;
+    color: #666666;
+    cursor:pointer;
+    padding:10px;
+}
+.register{
+    margin: auto;
+    margin-top:-205px;
+    width: 340px;
+    top: 80px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 60px #AAAAAA;
+    border-radius: 6px;
+    position:sticky;
+    z-index: 20;
+}
+.register-bar{
+    display: flex;
+    justify-content: center;
+    width: 340px;
+    height: 10px;
+    background: linear-gradient(270deg, #337788 0%, #66AABB 100%);
+}
+.register-title{
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 24px;
+    text-align: center;
+    color: #666666;
+    padding-top: 25px;
+}
+.register-input-name{
+    width: 280px;
+    height: 17px;
+    background: #FFFFFF;
+    border: 1px solid #CCCCCC;
+    border-radius: 5px;
+    margin:60px 15px 10px 15px;
+    
+    font-weight:700;
+    font-size: 16px;
+    line-height: 13px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #757575;
+    padding:15px;
+}
+.register-input-mail{
+    width: 280px;
+    height: 17px;
+    background: #FFFFFF;
+    border: 1px solid #CCCCCC;
+    border-radius: 5px;
+    margin:15px 15px 10px 15px;
+    
+    font-weight:700;
+    font-size: 16px;
+    line-height: 13px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #757575;
+    padding:15px;
+}
+.register-input-password{
+    width: 280px;
+    height: 17px;
+    background: #FFFFFF;
+    border: 1px solid #CCCCCC;
+    border-radius: 5px;
+    margin:15px 15px 10px 15px;
+    
+    font-weight:700;
+    font-size: 16px;
+    line-height: 13px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #757575;
+    padding:15px;
+}
+.register-button{
+    width: 310px;
+    height: 47px;
+    font-weight: 400;
+    font-size: 19px;
+    line-height: 16px;
+    text-align: center;
+    color: #FFFFFF;
+    background: #448899;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left:15px;
+    margin-bottom:10px;
+}
+.register-content{
+    font-weight:600;
+    font-size: 16px;
+    line-height: 13px;
+    text-align: center;
+    color: #666666;
+    cursor:pointer;
+    padding-bottom: 15px;
+}
+.register-alert{
+    text-align: center;
+    margin-bottom: 8px;
+}
+@media(max-width:380px){
+    .register{
+       margin-left: -13px;
+    }
+    .sign-in {
+        margin-left:-13px;
+    }
+  
+}
