@@ -2,8 +2,21 @@
     font-family:'Noto Sans TC';
     font-style: normal;
 }
-body{
+
+html,body{
     margin:auto;
+    height: 100%;
+}
+.body-backgroung{
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    background-color: #000;
+    width: 100%;
+    opacity: 0.25;
+    display: none;
+    z-Index: 2;
+    overflow:auto;
 }
 nav{
     height: 54px;
@@ -56,6 +69,11 @@ nav{
 .navlogin{
     color: #666666;
     font-weight:700;
+}
+.nav-form{
+    position: relative;
+    top: 150px;
+    left: 20%;
 }
 main{
     display:flex;
@@ -347,6 +365,9 @@ footer{
     .attractionImg{
         width:100%;
     }
+    .nav-form{
+      left:10%
+    }
 }
 @media(max-width:600px){
     .attraction{
@@ -358,10 +379,25 @@ footer{
     main{
         margin-top:0px;
     }
+    .nav-form{
+        left: -1%;
+    }
   
 }
 @media(max-width:400px){
     .col-left{
         margin:10px;
+    }
+    .nav-form{
+        width:0px;
+        left: -35%;
+    }
+}
+@media(max-width:360px){
+    .col-left{
+        margin:10px;
+    }
+    .nav-form{
+        left: -40%;
     }
 }

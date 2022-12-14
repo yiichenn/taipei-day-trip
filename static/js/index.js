@@ -149,10 +149,5 @@ function category(){
 category();
 //2.點輸入框顯示分類欄，或是點其它地方隱藏
 window.onclick = function(event) {
-    if(event.target == searchInput){
-        searchCategory.style.display="grid"
-    }else{
-        searchCategory.style.display="none"
-    }     
+    searchCategory.style.display = event.target == searchInput ? "grid" : "none"
 }
-  
